@@ -799,8 +799,8 @@ public class Game {
     synchronized (blackCardLock) {
       if (blackCard != null) {
         blackDeck.discard(blackCard);
+        logger.info(String.format("Black Card %s.", blackCard.toString()));
       }
-      logger.info(String.format("Black Card %s.", blackCard.toString()));
 
       newBlackCard = blackCard = getNextBlackCard();
     }
