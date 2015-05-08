@@ -52,6 +52,7 @@ import org.apache.log4j.Logger;
  * @author Andy Janata (ajanata@socialgamer.net)
  */
 public class GameChatHandler extends GameWithPlayerHandler {
+  private static final Logger logger = Logger.getLogger(GameChatHandler.class);
 
   public static final String OP = AjaxOperation.GAME_CHAT.toString();
 
