@@ -1435,7 +1435,7 @@ public class Game {
       }
 
       cardPlayer = playedCards.getPlayerForId(cardId);
-      logger.info(String.format("Card ID %i was judged the best by %s.", cardId, user.toString()));
+      logger.info(String.format("Card ID %d was judged the best by %s.", cardId, user.toString()));
       if (cardPlayer == null) {
         return ErrorCode.INVALID_CARD;
       }
