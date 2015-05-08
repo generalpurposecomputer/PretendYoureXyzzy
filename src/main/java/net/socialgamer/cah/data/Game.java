@@ -775,7 +775,7 @@ public class Game {
       while (hand.size() < 10) {
         final WhiteCard card = getNextWhiteCard();
         hand.add(card);
-        logger.info(String.format("%s has been dealt card %s.", user.toString(), card.toString()));
+        logger.info(String.format("%s has been dealt card %s.", player.toString(), card.toString()));
         newCards.add(card);
       }
       sendCardsToPlayer(player, newCards);
