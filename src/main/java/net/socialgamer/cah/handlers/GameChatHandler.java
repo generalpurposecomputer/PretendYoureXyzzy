@@ -94,6 +94,7 @@ public class GameChatHandler extends GameWithPlayerHandler {
         broadcastData.put(LongPollResponse.GAME_ID, game.getId());
         broadcastData.put(LongPollResponse.EMOTE, emote);
         game.broadcastToPlayers(MessageType.CHAT, broadcastData);
+        logger.info(String.format("CHAT EVENT: %s: %s", user.getNickname(), message));
       }
     }
 
