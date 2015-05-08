@@ -43,6 +43,8 @@ import net.socialgamer.cah.data.User;
 
 import com.google.inject.Inject;
 
+import org.apache.log4j.Logger;
+
 
 /**
  * Handler for chat messages.
