@@ -1379,6 +1379,8 @@ public class Game {
         while (iter.hasNext()) {
           final WhiteCard card = iter.next();
           if (card.getId() == cardId) {
+            logger.info(String.format("%s played %s.", user.toString(), card.toString()));
+
             playCard = card;
             if (WhiteDeck.isBlankCard(card)) {
               ((BlankWhiteCard) playCard).setText(cardText);
